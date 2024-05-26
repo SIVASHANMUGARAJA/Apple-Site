@@ -1,0 +1,286 @@
+body{
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: auto;
+    max-height: auto;
+}
+
+.containers{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display:flex;
+    align-items: center;
+    background-color:white;
+    box-shadow: 0px 10px 0px lightgrey;
+
+}
+
+.containers img{
+    height:80px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+p3{
+    padding-left: 10px;
+    font-weight:bold ;
+    font-family:cursive;
+    font-size: 30px;
+    color:crimson;
+}
+a{
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containers p{
+    margin-left: 400px;
+
+}
+
+a:hover{
+    color: red;
+}
+
+.head p{  
+    display: inline;
+    padding-top: 20px;
+    font-weight:700;
+    font-size: 70px;
+    padding-right: 40px;
+    font-family:Cambria, Georgia, Times, 'Times New Roman', serif
+}
+.main{
+    display: flex;
+
+}
+.image img{
+    margin-top: 50px;
+   
+}
+.content{
+    margin-left: 20px;
+}
+.content h1{
+    margin-top: 70px;
+    margin-left:20px;
+    font-size: 70px;
+}
+.content h3{
+    margin-top: 100px;
+    margin-left:20px;
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 8px;
+    line-height: 70px;
+    margin-top: 80px;
+}
+.content button{
+    margin-left:20px;
+    margin-top: -50px;
+
+}
+
+button{
+    border-color: red;
+    box-shadow: 7px 6px 6px grey;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color:springgreen;
+}
+
+.column1{            
+    background-color:floralwhite;
+    margin-right: 40px;
+    margin-left: 10px;
+    padding:20px; 
+    padding-bottom: 50px; 
+    width: 380px;
+    height: 570px;
+    transition: transform .2s;
+    border-radius: 20PX;
+}
+.column1:hover{
+    transform:scale(1.12);
+}
+.column2{
+    background-color:floralwhite ;
+    margin-right: 40px;
+    padding:20px; 
+    padding-bottom: 50px; 
+    width: 380px;
+    height: 570px;
+    transition: transform .2s;
+    border-radius: 20PX;
+
+}
+.column2:hover{
+    transform:scale(1.12);
+}
+
+
+.column3{
+    background-color:floralwhite ;
+    margin-right: 70px;
+    padding:20px;
+    width: 380px;
+    height: 570px;
+    transition: transform .2s;
+    border-radius: 20PX;
+    padding-bottom: 50px;
+
+}
+.column3:hover{
+    transform:scale(1.12);
+}
+
+.section{
+    display: grid;
+    text-align: justify;
+    margin-left: 65px;
+    grid: auto /auto auto auto;   
+    padding-bottom: 40px;
+    
+}
+
+h2{
+    color: red;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+p2{
+    color: black;
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.5;
+}
+img{
+    border-radius: 20px;
+}
+#color{
+    padding-top: 30px;
+    background-color:gainsboro;
+}
+#color h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+}
+#About{
+    text-align:justify;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 40px;
+    word-spacing: 3px;
+}
+#About h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+}
+#our{
+    text-align:justify;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 40px;
+    word-spacing: 3px;
+}
+#our h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+}
+.contact h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+}
+.contact{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: gainsboro ;
+    text-align: justify;
+    padding-left: 30px;
+}
+.contact h3{
+    text-align: center;
+    font-size: 30px;
+}
+.contact h2{
+    color:black;
+}
+.footer{
+    background-color: burlywood;
+    padding: 5px;
+    text-align: center;
+    font-size:25px ;
+}
+@media only screen and (max-width: 800px){
+    body{
+        background:violet;
+        color:brown;
+    }
+
+.section{
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+#color{
+    background-color: lightpink;
+}
+.contact{
+    background-color:chartreuse;
+    color:darkmagenta;
+}
+.containers{
+    background-color:chartreuse;
+}
+.containers a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.main{
+    flex-direction: column;
+}
+.main .image img{
+    width:100%;
+    height: auto;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+}
+.section .column1{
+    margin: auto;
+    margin-bottom: 40px;
+}
+.section .column2{
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+
+.section .column3{
+    margin: auto;
+
+}
+}
