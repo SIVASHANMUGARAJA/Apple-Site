@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLE SITE</title>
+    <style>
+        body{
+            margin: auto;
+            width: auto;
+            height: auto;
+            max-width: auto;
+            max-height: auto;
+        }
+        
+        .containers{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            display:flex;
+            align-items: center;
+            background-color:white;
+            box-shadow: 0px 10px 0px lightgrey;
+
+        }
+
+        .containers img{
+            height:80px;
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+        p3{
+            padding-left: 10px;
+            font-weight:bold ;
+            font-family:cursive;
+            font-size: 30px;
+            color:crimson;
+        }
+        a{
+            text-decoration: none;
+            padding-right: 30px;
+            padding-left: 30px;
+            color: black;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .containers p{
+            margin-left: 400px;
+
+        }
+        
+        a:hover{
+            color: red;
+        }
+        
+        .head p{  
+            display: inline;
+            padding-top: 20px;
+            font-weight:700;
+            font-size: 70px;
+            padding-right: 40px;
+            font-family:Cambria, Georgia, Times, 'Times New Roman', serif
+        }
+        .main{
+            display: flex;
+
+        }
+        .image img{
+            margin-top: 50px;
+           
+        }
+        .content{
+            margin-left: 20px;
+        }
+        .content h1{
+            margin-top: 70px;
+            margin-left:20px;
+            font-size: 70px;
+        }
+        .content h3{
+            margin-top: 100px;
+            margin-left:20px;
+            font-size: 35px;
+            font-weight: lighter;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            word-spacing: 8px;
+            line-height: 70px;
+            margin-top: 80px;
+        }
+        .content button{
+            margin-left:20px;
+            margin-top: -50px;
+
+        }
+
+        button{
+            border-color: red;
+            box-shadow: 7px 6px 6px grey;
+            padding: 20px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        button:hover{
+            background-color:springgreen;
+        }
+
+        .column1{            
+            background-color:floralwhite;
+            margin-right: 40px;
+            margin-left: 10px;
+            padding:20px; 
+            padding-bottom: 50px; 
+            width: 380px;
+            height: 570px;
+            transition: transform .2s;
+            border-radius: 20PX;
+        }
+        .column1:hover{
+            transform:scale(1.12);
+        }
+        .column2{
+            background-color:floralwhite ;
+            margin-right: 40px;
+            padding:20px; 
+            padding-bottom: 50px; 
+            width: 380px;
+            height: 570px;
+            transition: transform .2s;
+            border-radius: 20PX;
+
+        }
+        .column2:hover{
+            transform:scale(1.12);
+        }
+        
+
+        .column3{
+            background-color:floralwhite ;
+            margin-right: 70px;
+            padding:20px;
+            width: 380px;
+            height: 570px;
+            transition: transform .2s;
+            border-radius: 20PX;
+            padding-bottom: 50px;
+
+        }
+        .column3:hover{
+            transform:scale(1.12);
+        }
+    
+        .section{
+            display: grid;
+            text-align: justify;
+            margin-left: 65px;
+            grid: auto /auto auto auto;   
+            padding-bottom: 40px;
+            
+        }
+       
+        h2{
+            color: red;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+        p2{
+            color: black;
+            text-align: left;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+        img{
+            border-radius: 20px;
+        }
+        #color{
+            padding-top: 30px;
+            background-color:gainsboro;
+        }
+        #color h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 35px;
+        }
+        #About{
+            text-align:justify;
+            padding-left: 20px;
+            padding-right: 30px;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 25px;
+            line-height: 40px;
+            word-spacing: 3px;
+        }
+        #About h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 35px;
+        }
+        #our{
+            text-align:justify;
+            padding-left: 20px;
+            padding-right: 30px;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 25px;
+            line-height: 40px;
+            word-spacing: 3px;
+        }
+        #our h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 35px;
+        }
+        .contact h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 35px;
+        }
+        .contact{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background-color: gainsboro ;
+            text-align: justify;
+            padding-left: 30px;
+        }
+        .contact h3{
+            text-align: center;
+            font-size: 30px;
+        }
+        .contact h2{
+            color:black;
+        }
+        .footer{
+            background-color: burlywood;
+            padding: 5px;
+            text-align: center;
+            font-size:25px ;
+        }
+        @media only screen and (max-width: 800px){
+            body{
+                background:violet;
+                color:brown;
+            }
+        
+        .section{
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+        }
+        #color{
+            background-color: lightpink;
+        }
+        .contact{
+            background-color:chartreuse;
+            color:darkmagenta;
+        }
+        .containers{
+            background-color:chartreuse;
+        }
+        .containers a{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .main{
+            flex-direction: column;
+        }
+        .main .image img{
+            width:100%;
+            height: auto;
+        }
+        .section{
+            display: flex;
+            flex-direction: column;
+        }
+        .section .column1{
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .section .column2{
+            margin: auto;
+            margin-bottom: 40px;
+
+        }
+
+        .section .column3{
+            margin: auto;
+
+        }
+    }
+            
+        
+    </style>
+<body>
+    <div class="containers">
+            
+        <img src="apple.jpg"/>
+        <div class="head">
+        <p3>Heavenly Fruits</p3>
+        <p><a href="#About" href="About">ABOUT</a>
+        <a href="#color" href="color">VARIETIES</a>
+        <a href="#our" href="our">OUR STORY</a>
+        <a href="https://www.healthline.com/nutrition/healthy-fruit">BENEFITS</a></p>
+    </div>
+    </div>
+
+<div class="main">
+    <div class="image">
+    <img src="https://i.ibb.co/T4czpqY/apples-red-fresh-mellow-juicy-perfect-whole-on-white-desk.jpg"width="810px" height="620px" />
+    </div>
+    <div class="content">
+    <h1>Fresh, Crispy, <br>Heavenly.
+    <h3>100% Organic, vivid varieties of 
+    apples grown in kashmir aka The Heaven of Earth.</h3>
+<br>  
+<button type="Buynow">Buy Now</button>
+    </h1>
+</div>
+</div>
+<div id="color">
+    <h1>VARIETIES</h1>
+
+<div class="section">
+<div class="column1">
+    <img src="first.jpg" width="380px" height="250px"/>
+    <h2>Apples</h2>
+    <p2>Apples are a valuable part of any diet. They are rich in vitamins, minerals, and fiber, which can help control hunger and regulate blood sugar.
+        Eaten regularly, preferably with the nutrient-rich skin on, apples can supplement any diet with important vitamins and minerals. 
+        </p2>
+</div>  
+<div class="column2">
+    <img src="second.jpg" width="380px" height="250px"/>
+
+    <h2>Mangoes</h2>
+    <p2>Mangoes are fruits that have a range of possible health benefits. The nutrients they contain may help boost eye, skin, and hair health and prevent cancer and heart disease. There are many different kinds of mango.</p2>
+</div>  
+<div class="column3">
+    <img src="green.jpg" width="380px" height="250px"/>
+
+    <h2>Pomegranates</h2>
+    <p2>Pomegranate seeds are safe to eat and are a good source 
+        of many vitamins and nutrients. People may also refer to 
+        pomegranate seeds as arils.The white flesh surrounding 
+        these seeds is technically edible but is bitter, and most 
+        people avoid the skin of pomegranate fruit. 
+    </p2>
+</div>
+</div>
+<div class="section">
+
+<div class="column1">
+    <img src="grapes.jpg" width="380px" height="250px"/>
+
+    <h2>Grapes</h2>
+    <p2>A grapefruit supplies about 10% of your daily potassium needs, along with 8% of your requirements for thiamine and folate. You also get additional antioxidant power from lycopene, a natural, nutritious compound found in tomatoes and watermelon.
+    </p2>
+</div>  
+<div class="column2">
+    <img src="orange.jpg" width="380px" height="250px"/>
+
+    <h2>Oranges</h2>
+    <p2>oranges have various health benefits due to their vitamin C content. The nutritional profile depends on the size of the fruit, but one mandarin can provide about a third of a person’s daily requirement of vitamin orange are citrus fruits that belong to the botanical family Rutaceae.
+    </p2>
+</div>  
+
+<div class="column3">
+
+    <img src="banana.jpg" width="380px" height="250px"/>
+    
+    <h2>Banana</h2>
+    <p2>Bananas contain essential nutrients that may enhance heart health, help manage blood pressure, and boost a person’s mood, among other benefits. While bananas can be good for health, there may be risks in some cases. itcontain water and fiber, promote regularity and health.
+    </p2>
+</div>  
+</div>
+<div class="section">
+
+    <div class="column1">
+        <img src="jack.jpg" width="380px" height="250px"/>
+    
+        <h2>Jackfruit</h2>
+        <p2>Jackfruit is an exotic fruit grown in tropical regions of the world. It is native to South India.
+
+            It is part of the Moraceae plant family, which also includes fig, mulberry and breadfruit. Jackfruit has a spiky outer skin and is green or yellow in color sweet and fruity flavor.
+        </p2>
+    </div>  
+    <div class="column2">
+        <img src="papaya.jpg" width="380px" height="250px"/>
+    
+        <h2>Papaya</h2>
+        <p2>Papayas contain a range of nutrients, such as antioxidants and potassium. Possible health benefits of eating papaya may include reducing the risk of heart disease, diabetes, cancer, and more. Papaya, papaw, or pawpaw, is a soft, fleshy fruit of the plant species Carica papaya.
+        </p2>
+    </div>  
+    <div class="column3">
+    
+        <img src="pine.jpg" width="380px" height="250px"/>
+        
+        <h2>Pineapple</h2>
+        <p2>Pineapple contains nutrients and beneficial compounds, such as vitamin C, manganese, and enzymes, to help aid digestion. Eating pineapple may help boost immunity, lower cancer risk, and improve recovery time after surgery. it has calcium, and vitamins A and K.
+        </p2>
+    </div>  
+</div>
+</div>
+<div id="About">
+    <h1>ABOUT US</h1>
+    <p6>Welcome to Nature's Bounty Fruits, your 
+    premier destination for the freshest, 
+    highest-quality fruits delivered right 
+    to your doorstep. Our mission is to bring
+    the bountiful harvest of nature directly to 
+    you, ensuring that you enjoy the delicious 
+    taste and nutritional benefits of premium 
+    fruits all year round.</p6>
+    </div>
+    <div id="our">
+    <h1>OUR STORY</h1>
+    <p6>Founded in 2024 by a group of passionate 
+        fruit enthusiasts, Nature's Bounty Fruits 
+        began as a small family-owned business 
+        with a big dream: to make fresh, delicious
+        fruits accessible to everyone. Our journey
+        started in the lush orchards and farms, 
+        where we handpicked the finest fruits to 
+        share with our community. Today, we have 
+        grown into a trusted name, known for our 
+        commitment to quality, sustainability, 
+        and customer satisfaction.</p6>
+</div>
+<div class="contact">
+    <h1>CONTACT US</h1>
+    <h3>For more information, please feel free to contact us at:</h3>
+        <h2><b>❖ <u>E-Mail</u> :</b> <font color="blue">support@naturesheavenlyfruits.com</font></h2>
+        <h2><b>❖ <u>Phone</u> :</b> <font color="black">(+91) - 7871243333</font></h2>
+        <h2><b>❖ <u>Address</u> :</b> <font color="black">No: 12/3, Pondy Bazzar Road, Chennai.</font></h2>
+
+    </div>
+    <div class="footer">
+        <h3>&copy; 2024 Heavenly Fruits. All rights reserved.</h3>
+    </div>
+</body>
+</html>
